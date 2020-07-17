@@ -10,7 +10,7 @@ A Web Interface (with API included) for CamJamEdukit 3 for RPI Zero W
 * A Frontend using vanilla JS, HTML & CSS
 
 ### Dependencies
-* Python 3.8 and pip3 and/or latest version of Node.js and npm
+* Python 3.8 and pip3 and if needed latest version of Node.js and npm
 * A Raspberry PI (only Python version for armv6l based RPIs) with Raspberry Pi OS installed
 * CamJam Edukit 3 
 
