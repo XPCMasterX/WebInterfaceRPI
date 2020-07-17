@@ -19,6 +19,31 @@ async function left() {
     console.log(y.message);
 }
 
+async function trigger(direction) {
+    if (direction === "left") {
+        left();
+        document.getElementById("left").style.backgroundColor = "red";
+        var x = await new Promise(r => setTimeout(r, 100));
+        document.getElementById("left").style.backgroundColor = "greenyellow";
+    } else if (direction === "right") {
+        right();
+        document.getElementById("right").style.backgroundColor = "red";
+        var x = await new Promise(r => setTimeout(r, 100));
+        document.getElementById("right").style.backgroundColor = "greenyellow";
+    } else if (direction === "down") {
+        down();
+        document.getElementById("down").style.backgroundColor = "red";
+        var x = await new Promise(r => setTimeout(r, 100));
+        document.getElementById("down").style.backgroundColor = "greenyellow";
+    } else if (direction === "up") {
+        up();
+        document.getElementById("up").style.backgroundColor = "red";
+        var x = await new Promise(r => setTimeout(r, 100));
+        document.getElementById("up").style.backgroundColor = "greenyellow";
+    }
+} 
+
+
 document.addEventListener('keydown', function(event) {
     if (event.keyCode == 37) {
         left();
