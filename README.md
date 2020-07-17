@@ -6,7 +6,7 @@ A Web Interface (with API included) for CamJamEdukit 3 for RPI Zero W
 
 ### What's in here?
 * An API made with Python 3.8
-* An API made with Node.js if you prefer all Javascript (Note: not available for armv6l versions of RPI: Raspberry Pi 0, Raspberry Pi 0 W, and Raspberry Pi 1 generation)
+* An API made with Node.js if you prefer all Javascript (Note: not available for armv6l versions of RPI: Raspberry Pi 0, Raspberry Pi 0 W, and Raspberry Pi 1 generation) - Currently incomplete
 * A Frontend using vanilla JS, HTML & CSS
 
 ### Dependencies
