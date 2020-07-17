@@ -1,7 +1,7 @@
 # WebInterfaceRPI
 A Web Interface (with API included) for CamJamEdukit 3 for RPI Zero W
 
-![Image of part of Web Interface](WebInterfaceRPI.png)
+![Image of part of Web Interface](WebInterfaceRPI.png)  
 *Part of Web Interface used to control Robot*
 
 ### What's in here?
