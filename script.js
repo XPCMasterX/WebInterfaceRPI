@@ -1,29 +1,19 @@
-async function up() {
-    var x = await fetch("http://robot20:8080/up");
-    var y = await x.json();
-    console.log(y.message);
+function up() {
+    fetch("http://robot20:8080/up");
 }
 
-async function upstop() {
-    var x = await fetch("http://robot20:8080/upstop");
-    var y = await x.json();
-    console.log(y.message);
+function stop() {
+    fetch("http://robot20:8080/upstop");
 }
 
-async function down() {
-    var x = await fetch("http://robot20:8080/down");
-    var y = await x.json();
-    console.log(y.message);
+function down() {
+    fetch("http://robot20:8080/down");
 }
-async function right() {
-    var x = await fetch("http://robot20:8080/right");
-    var y = await x.json();
-    console.log(y.message);
+function right() {
+    fetch("http://robot20:8080/right");
 }
-async function left() {
-    var x = await fetch("http://robot20:8080/left");
-    var y = await x.json();
-    console.log(y.message);
+function left() {
+    fetch("http://robot20:8080/left");
 }
 
 document.addEventListener('keydown', function(event) {
@@ -44,13 +34,16 @@ document.addEventListener('keydown', function(event) {
 
 document.addEventListener('keyup', function(event) {
     if (event.keyCode == 37) {
+        stop();
         document.getElementById("left").style.backgroundColor = "greenyellow";
     } else if (event.keyCode == 39) {
+        stop();
         document.getElementById("right").style.backgroundColor = "greenyellow";
     } else if (event.keyCode == 40) {
+        stop();
         document.getElementById("down").style.backgroundColor = "greenyellow";
     } else if (event.keyCode == 38) {
-        upstop();
+        stop();
         document.getElementById("up").style.backgroundColor = "greenyellow";
     }
 }); 

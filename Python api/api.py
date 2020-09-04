@@ -18,7 +18,7 @@ def up():
     time.sleep(timewait)
     return jsonify(success)
 
-@app.route("/upstop")
+@app.route("/stop")
 def upstop():
     robot.stop()
     return jsonify(success)
