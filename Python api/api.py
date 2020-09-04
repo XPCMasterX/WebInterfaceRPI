@@ -30,14 +30,14 @@ def down():
     robot.stop()
     return jsonify(success)
 
-@app.route("/left")
+@app.route("/right")
 def left():
     robot.left()
     time.sleep(timewait)
     robot.stop()
     return jsonify(success)
 
-@app.route("/right")
+@app.route("/left")
 def right():
     robot.right()
     time.sleep(timewait)
