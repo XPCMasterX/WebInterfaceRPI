@@ -19,7 +19,7 @@ def up():
     return jsonify(success)
 
 @app.route("/upstop")
-def up():
+def upstop():
     robot.stop()
     return jsonify(success)
 
