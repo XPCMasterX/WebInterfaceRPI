@@ -1,20 +1,20 @@
 async function up() {
-    var x = await fetch("http://localhost:8080/up");
+    var x = await fetch("http://robot20:8080/up");
     var y = await x.json();
     console.log(y.message);
 }
 async function down() {
-    var x = await fetch("http://localhost:8080/down");
+    var x = await fetch("http://robot20:8080/down");
     var y = await x.json();
     console.log(y.message);
 }
 async function right() {
-    var x = await fetch("http://localhost:8080/right");
+    var x = await fetch("http://robot20:8080/right");
     var y = await x.json();
     console.log(y.message);
 }
 async function left() {
-    var x = await fetch("http://localhost:8080/left");
+    var x = await fetch("http://robot20:8080/left");
     var y = await x.json();
     console.log(y.message);
 }
