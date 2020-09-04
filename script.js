@@ -3,6 +3,13 @@ async function up() {
     var y = await x.json();
     console.log(y.message);
 }
+
+async function upstop() {
+    var x = await fetch("http://robot20:8080/upstop");
+    var y = await x.json();
+    console.log(y.message);
+}
+
 async function down() {
     var x = await fetch("http://robot20:8080/down");
     var y = await x.json();
@@ -18,31 +25,6 @@ async function left() {
     var y = await x.json();
     console.log(y.message);
 }
-
-async function trigger(direction) {
-    if (direction === "left") {
-        left();
-        document.getElementById("left").style.backgroundColor = "red";
-        var x = await new Promise(r => setTimeout(r, 100));
-        document.getElementById("left").style.backgroundColor = "greenyellow";
-    } else if (direction === "right") {
-        right();
-        document.getElementById("right").style.backgroundColor = "red";
-        var x = await new Promise(r => setTimeout(r, 100));
-        document.getElementById("right").style.backgroundColor = "greenyellow";
-    } else if (direction === "down") {
-        down();
-        document.getElementById("down").style.backgroundColor = "red";
-        var x = await new Promise(r => setTimeout(r, 100));
-        document.getElementById("down").style.backgroundColor = "greenyellow";
-    } else if (direction === "up") {
-        up();
-        document.getElementById("up").style.backgroundColor = "red";
-        var x = await new Promise(r => setTimeout(r, 100));
-        document.getElementById("up").style.backgroundColor = "greenyellow";
-    }
-} 
-
 
 document.addEventListener('keydown', function(event) {
     if (event.keyCode == 37) {
@@ -68,6 +50,7 @@ document.addEventListener('keyup', function(event) {
     } else if (event.keyCode == 40) {
         document.getElementById("down").style.backgroundColor = "greenyellow";
     } else if (event.keyCode == 38) {
+        upstop();
         document.getElementById("up").style.backgroundColor = "greenyellow";
     }
 }); 

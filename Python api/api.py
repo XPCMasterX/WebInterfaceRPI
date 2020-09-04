@@ -16,6 +16,10 @@ success = {
 def up():
     robot.forward()
     time.sleep(timewait)
+    return jsonify(success)
+
+@app.route("/upstop")
+def up():
     robot.stop()
     return jsonify(success)
 
