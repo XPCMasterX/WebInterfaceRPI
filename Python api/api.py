@@ -27,21 +27,18 @@ def stop():
 def down():
     robot.backward()
     time.sleep(timewait)
-    robot.stop()
     return jsonify(success)
 
 @app.route("/right")
 def left():
     robot.left()
     time.sleep(timewait)
-    robot.stop()
     return jsonify(success)
 
 @app.route("/left")
 def right():
     robot.right()
     time.sleep(timewait)
-    robot.stop()
     return jsonify(success)
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ function up() {
 }
 
 function stop() {
-    fetch("http://robot20:8080/upstop");
+    fetch("http://robot20:8080/stop");
 }
 
 function down() {
