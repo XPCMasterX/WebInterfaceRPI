@@ -47,3 +47,11 @@ document.addEventListener('keyup', function(event) {
         document.getElementById("up").style.backgroundColor = "greenyellow";
     }
 }); 
+
+function dup(key_id) {
+    stop()
+}
+
+function ddown() {
+    eval(`${key_id}()`)
+}

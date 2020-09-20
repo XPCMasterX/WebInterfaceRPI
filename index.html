@@ -11,13 +11,13 @@
     </head>
     <body>
         <div class="center">
-            <button id="up" onclick="trigger('up')" >Up</button>
+            <button id="up" onmousedown="ddown()" onmouseup="dup()">Ux`p</button>
             <br />
         </div>
         <div class="center">
-            <button id="left" onclick="trigger('left')" >Left</button>
-            <button id="down" onclick="trigger('down')" >Down</button>
-            <button id="right" onclick="trigger('right')" >Right</button>
+            <button id="left" onmousedown="ddown()" onmouseup="dup()">Left</button>
+            <button id="down" onmousedown="ddown()" onmouseup="dup()">Down</button>
+            <button id="right" onmousedown="ddown()" onmouseup="dup()" >Right</button>
         </div>
         <script src="script.js"></script>
     </body>
